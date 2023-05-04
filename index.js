@@ -14,10 +14,10 @@ console.log(
   `Este es el último elemento de un array: ${fruits[fruits.length - 1]}`
 );
 
-// INDEX OF:
+// INDEX OF: retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente.
 console.log(`INDEXOF devuelve: ${fruits.indexOf("fresa")}`);
 
-// INCLUDES:
+// INCLUDES: determina si una matriz incluye un determinado elemento, devuelve true o false según corresponda.
 let isThereABanana = fruits.includes("banana");
 console.log(`INCLUDES devuelve: ${isThereABanana}`);
 
