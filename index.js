@@ -50,19 +50,19 @@ console.log(`PUSH devuelve: ${addMoreFruitsToTheEnd}`);
 console.log(`PUSH modifica el array original: ${fruits}`);
 
 // SPLICE: cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
-let deleteFruitsByPosition = fruits.splice(0, 2);
+let deleteFruitsByPosition = fruits.splice(3, 0, "parchita");
 console.log(`SPLICE devuelve: ${deleteFruitsByPosition}`);
 console.log(`SPLICE modifica el array original: ${fruits}`);
 
 // SOME: comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada.
 let areThereAnyFruitsLongerThanSeven = fruits.some(
-  (_element, index) => fruits[index].length > 7
+  (_element, index) => fruits[index].length > 17
 );
 console.log(`SOME devuelve: ${areThereAnyFruitsLongerThanSeven}`);
 
 // EVERY: determina si todos los elementos en el array satisfacen una condición.
 let areAllFruitsLongerThanSeven = fruits.every(
-  (_element, index) => fruits[index].length > 7
+  (_element, index) => fruits[index].length > 1
 );
 console.log(`EVERY devuelve: ${areAllFruitsLongerThanSeven}`);
 
@@ -76,12 +76,12 @@ console.log(`FIND devuelve: ${firstFruitLongerThanSeven}`);
 let allFruitsLongerThanSeven = fruits.filter(
   (_element, index) => fruits[index].length > 7
 );
-console.log(`FIND devuelve: ${allFruitsLongerThanSeven}`);
+console.log(`FILTER devuelve: ${allFruitsLongerThanSeven}`);
 
 // JOIN: une todos los elementos de una matriz (o un objeto similar a una matriz) en una cadena y devuelve esta cadena.
 console.log(`JOIN devuelve: ${fruits.join("----")}`);
 
 // MAP: crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
 let numbers = [1, 2, 3, 4, 5];
-let multiplyByTwo = numbers.map((_number, index) => numbers[index] * 2);
+let multiplyByTwo = numbers.map((number) => number * 2);
 console.log(`MAP devuelve: ${multiplyByTwo}`);
